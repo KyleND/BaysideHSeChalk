@@ -4,7 +4,7 @@
 -------
 -->
 <style type="text/css">
-a{
+#navigation a{
 	text-decoration: none;
 }
 	#header { background-color: ghostwhite;
@@ -24,6 +24,7 @@ a{
 	} 
 	#quickLinks a{
 		color: black;
+		text-decoration: none;
 	}
 	#logo { background-color: yellow;
 			width: 100%;}
@@ -36,17 +37,21 @@ a{
 				font-family: arial;
 				border: 5px solid navy;
 				margin: 5px;
+				width: 100%;
 				
 			 }
 	#navigation a:visited {
 		color: white;
 	}
-	#navigation a:hover{  
+	#navigation div:hover{  
 				background-color: orange;
 				color: black;
 				font-family: arial;
-				;
 				
+				
+	}
+	#navigation{
+		display: block;
 	}
 
 
@@ -163,6 +168,62 @@ a{
 	}
 	
 </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#dire").mouseover(function(){
+		$(this).html("<a href=''>Faculty and Staff</a><a href=''>Class Pages </a><a href=''> Group Pages</a>");
+		
+	});
+	$("#dire").mouseleave(function(){
+		$(this).html("<a href='' id='dire'>Directory</a>");
+	});
+	$("#abou").mouseover(function(){
+		$(this).html("<a href=''>Bell Schedule</a><a href=''>Calendar 2014</a><br/><a href=''>Discipline Code</a><a href=''>Dress Code</a>");
+		
+	});
+	$("#abou").mouseleave(function(){
+		$(this).html("<a href='' id='abou'>About BHS</a>");
+	});
+	$("#acade").mouseover(function(){
+		$(this).html("<a href=''>Art  </a><a href=''> Business </a><a href=''> English </a><a href=''>Science </a>");
+		
+	});
+	$("#acade").mouseleave(function(){
+		$(this).html("<a href='' id='acade'>Academics</a>");
+	});
+	$("#studn").mouseover(function(){
+		$(this).html("<a href=''>BHS Juniors </a><a href=''> BHS Seniors </a><a href=''> Key Club</a>");
+		
+	});
+	$("#studn").mouseleave(function(){
+		$(this).html("<a href='' id='studn'>Students</a>");
+	});
+	$("#parn").mouseover(function(){
+		$(this).html("<a href=''>Parent Resources </a><a href=''> Parent Registration </a><a href=''> PTA</a>");
+		
+	});
+	$("#parn").mouseleave(function(){
+		$(this).html("<a href='' id='parn'>Parents</a>");
+	});
+	$("#libra").mouseover(function(){
+		$(this).html("<a href=''>About Library</a><a href=''> Databases </a><a href=''> eChalk</a>");
+		
+	});
+	$("#libra").mouseleave(function(){
+		$(this).html("<a href='' id='libra'>Library</a>");
+	});
+	$("#guidec").mouseover(function(){
+		$(this).html("<a href=''>Announcements</a><a href=''> PSAT </a><a href=''> College Now</a>");
+		
+	});
+	$("#guidec").mouseleave(function(){
+		$(this).html("<a href='' id='guidec'>Guidance</a>");
+	});
+	
+	
+});
+</script>
 <title>Mimic High School </title>	
 </head>
 <body link="orange">
@@ -170,24 +231,24 @@ a{
 	<div id="header">
 		<div id="quickLinks">
 			<ul>
-			<li><p>></p><a href="http://www.baysidehighschool.org/">School Home</a>
-			<li><p>></p><a href="http://www.baysidehighschool.org/login">Login</a>
-			<li><p>></p><a href="http://www.baysidehighschool.org/help">Help</a>
-			<li><p>></p><a href="http://www.baysidehighschool.org/search">Search</a>
+			<li><p></p><a href="http://www.baysidehighschool.org/">School Home</a>
+			<li><p></p><a href="http://www.baysidehighschool.org/login">Login</a>
+			<li><p></p><a href="http://www.baysidehighschool.org/help">Help</a>
+			<li><p></p><a href="http://www.baysidehighschool.org/search">Search</a>
 			</ul>
 		</div>
 		<div id="Logo">
 		<img src="images/baysidelogo.jpg" alt=""> 
 		</div>
 		<div id="navigation">
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Directory &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp;    </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  About BHS &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp;   </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Calendar &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp;    </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Academics &&ensp; &ensp; &ensp;  &ensp; &ensp;  &ensp; &ensp; &ensp;  &ensp; &ensp;   </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Students&ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp;    </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Parents &ensp; &ensp; &ensp;  &ensp; &ensp;  &ensp; &ensp; &ensp;  &ensp; &ensp;   </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Library &ensp; &ensp; &ensp;  &ensp; &ensp;  &ensp; &ensp; &ensp;  &ensp; &ensp;    </a>
-		<a href=""> &ensp; &ensp; &ensp;  &ensp; &ensp;  Guidance&ensp; &ensp; &ensp;  &ensp; &ensp;  &ensp; &ensp; &ensp;  &ensp; &ensp;  </a>
+		<div id="dire"><a href=""> Directory    </a></div>
+		<br/><div id="abou"><a href="">  About BHS    </a></div>
+		<br/><div id="calen"><a href="">   Calendar    </a></div>
+		<br/><div id="acade"><a href="">   Academics    </a></div>
+		<br/><div id="studn"><a href="">   Students    </a></div>
+		<br/><div id="parn"><a href="">  Parents   </a></div>
+		<br/><div id="libra"><a href="">   Library     </a></div>
+		<br/><div id="guidec"><a href="">  Guidance </a></div>
 		</div>
 		
 		<div id="Login">
